@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event & Listing to Events</title>
+</head>
+<body>
+    <div class="container">
+        <h1>This is my heading</h1>
+        <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nostrum nihil accusantium, aliquam sequi non eius 
+            ipsa
+             consequatur reprehenderit officia quis fuga dolor mollitia tempore repellat distinctio. Totam porro minus reprehenderit 
+             accusamus veniam temporibus fugiat incidunt amet suscipit! Expedita provident ad eius ipsam labore natus illum numquam cum nobis
+              corporis laborum molestias culpa sed ducimus dignissimos iste soluta dicta eaque corrupti vitae pariatur, quis distinctio adipisci
+              Laborum ducimus illo veniam dolorem quia deserunt quisquam asperiores. Tempora, earum? Aspernatur nesciunt dolore aliquid nostrum, 
+              fugit voluptates ea quo quibusdam! Quos nam, dicta sed maxime minima veritatis quaerat vero reprehenderit. Architecto, ut, nisi odio 
+              illo magnam ipsa libero odit voluptatem molestias sint perspiciatis dolor unde vero laudantium et autem enim rerum repellat 
+              incidunt consequuntur? Deserunt animi ratione, tenetur ex at quaerat, eum assumenda aliquid incidunt molestias dolorem blanditiis 
+              omnis quis voluptatibus in architecto beatae sint repellendus doloribus delectus velit odit voluptatem nihil! Enim culpa excepturi 
+              praesentium a dignissimos eos quasi facilis dolores illo quaerat, recusandae, provident numquam earum suscipit pariatur quas ducimus 
+              odit nulla neque incidunt. Fugit vel neque minus libero a obcaecati tempore sunt ipsam soluta unde ea quo officia repellendus corrupti
+               eligendi nulla, modi quasi error, porro reprehenderit inventore? Sint impedit soluta numquam debitis a! Eaque atque consectetur 
+               quisquam enim magnam aperiam optio, aspernatur, cumque doloribus 
+            iure laudantium alias nulla quidem delectus autem nisi at suscipit obcaecati vitae, incidunt ipsa? Aliquid fugiat modi voluptate animi?</p>
+    <button id="btn" onclick="toggleHide()">Show/Hide</button>
+    </div>
+    <script>
+        let para=document.getElementById('para');
+        para.addEventListner('mouseover',function run()){
+            console.log('Mouse Inside')
+        }
+    </script>
+</body>
+</html>
