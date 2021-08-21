@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h2>This is form tag</h2>
+    <form action=backend.php>
+    <div>
+        <label for="name">Name</label>
+        <input type="text" name="myName" id="name">
+    </div><br>
+    <div>
+        <label for="add">Address</label>
+        <input type="text" name="myAddress" id="add">
+    </div><br>
+    <div>
+        <label for="email">Email</label>
+        <input type="email" name="myEmail" id="email">
+    </div><br>
+    
+    <div>
+        <label for="d">Date</label>
+        <input type="date" name="myDate" id="d">
+    </div><br>
+    <div>
+        <label for="num">Number</label>
+        <input type="number" name="myNum" id="num">
+    </div><br>
+    <div>
+        <label for="e">Are u Eligiable</label>
+        <input type="checkbox" name="Eligible" id="e">
+        </div><br>
+    <div>
+      <label for="gen">Male</label>
+      <input type="radio" name="myGender" id="gen"><br>
+      <label for="gen2">Female</label>
+      <input type="radio" name="myGender"id="gen2"><br>
+      <label for="gen3">others</label>
+      <input type="radio" name="myGender" id="gen3"><br>
+    </div><br>
+    <div>
+        <label for="txt">TextArea</label>
+        <br><textarea name="myText" cols="30" rows="10" id="txt"></textarea>
+    </div><br>
+    <div>
+        <input type="submit" value="SubmitNow">
+        <input type="reset" value="ResetNow">
+    </div><br>
+    </form>
+</body>
+</html>

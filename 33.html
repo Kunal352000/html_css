@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo code</title>
+    <style>
+        body{
+            background-color: black;
+            color: white;
+        }
+        header::before{
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            z-index: -1;
+            top:0;
+            left:0;
+            content: center;
+            opacity: 0.3px;
+            background-image: url("/23.jpg");
+        }
+        section{
+            display: flex;
+            flex-direction:column;
+            margin: 3px 23px;
+            align-items: center;
+            height: 350px;
+            justify-content: center;
+           
+
+        }
+        .navigation{
+            display: flex;
+            flex-direction:row;
+            text-align: left;
+        }
+        li{
+            list-style: none;
+            padding: 34px 23px;
+        }
+        section::after{
+            content:"This is a content";
+            font-size: 2rem;
+        }
+        p{
+            text-align: center;
+        }
+        h3{
+            font-size: 5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <nav class="nabvar">
+        <ul class="navigation">
+        <li class="item">Home</li>
+        <li class="item">About Us</li>
+        <li class="item">Conatact Us</li>
+        <li class="item">Services</li>
+        </ul>
+    </nav>
+    </header>
+
+    <section>
+    <h3>Welcome to the coding World</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui dolorem
+     consequatur deserunt fuga perspiciatis quidem rem placeat, nemo, rerum explicabo 
+    voluptates animi unde aperiam cum id ab voluptatem, possimus sint!</p>
+    </section>
+</body>
+</html>

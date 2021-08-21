@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selector</title>
+    <style>
+    .container{
+        display: block;
+        width: 233px;
+        margin:auto;
+        padding: 14px;
+    }
+    input{
+        display: block;
+    }
+    input[type='text']{
+        padding: 23px;
+        border: 2px solid red;
+    }
+    input[type="password"]{
+        padding: 23px;
+        border: 2px solid gold;
+    }
+    input[type="email"]{
+        padding: 23px;
+        border: 2px solid gray;
+    }
+    input[type="submit"]{
+        padding: 23px;
+        border: rgb(241, 145, 145);
+        margin: auto;
+        display: block;
+
+    }
+    a[target="_self"]{
+        font-size: 34px;
+        color:rgb(13, 245, 114)
+    }
+    a[target="_blank"]{
+        font-size: 34px;
+        color: rgb(15, 186, 253);
+    }
+    a[target]{
+        font-size: 34px;
+        color: rgb(10, 230, 230);
+    }
+    li:nth-child(3){
+        color: lightseagreen;
+    }
+    li:nth-child(2nto){
+        color:rgb(241, 145, 145)
+    }
+    .container input:hover{
+        text-decoration: underline;
+        color: crimson;
+    }
+    .container submit:hover{
+        color: darkmagenta;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <form action="" class="form-control">
+        <h1><a href="http://facebook.com" target="_self">Go to facebook</a></h1>
+        <h1><a href="http://google.com" target="_blank">Go to Google</a></h1>
+        <input type="text" placeholder="Enter your name">
+        <input type="password" placeholder="Enter your Password">
+        <input type="email" placeholder="Enter your Email">
+        <input type="submit"placeholder="Submit">
+    </form>
+
+    <ul>
+    <li class="item" id="item-1">Item1</li>
+    <li class="item" id="item-2">Item2</li>
+    <li class="item" id="item-3">Item3</li>
+    <li class="item" id="item-4">Item4</li>
+    <li class="item" id="item-5">Item5</li>
+    <li class="item" id="item-6">Item6</li>
+    <li class="item" id="item-7">Item7</li>
+    <li class="item" id="item-8">Item8</li>
+    <li class="item" id="item-9">Item9</li>
+    <li class="item" id="item-10">Item10</li>
+    <li class="item" id="item-11">Item11</li>
+    <li class="item" id="item-12">Item12</li>
+    
+</body>
+</html>
